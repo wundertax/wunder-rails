@@ -1,3 +1,3 @@
 # Wundertax Rails images
 
-TODO
+Every variant is on its own branch
