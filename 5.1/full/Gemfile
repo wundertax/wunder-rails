@@ -1,0 +1,82 @@
+source 'https://rubygems.org'
+
+gem 'rails', '~> 5.1'
+gem 'rack', '~> 2.0.0'
+gem 'puma'
+gem 'bcrypt', '~> 3.1.10'
+gem 'pg', '~> 0.18.3'
+gem 'thin', '~> 1.7.0'
+gem 'countries', '~> 1.2.2'
+gem 'redis', '~> 3.2'
+
+# Publish-Subscribe model
+gem 'wisper', '~> 2.0'
+
+# Counting business days
+gem 'business_time', '~> 0.9.2'
+gem 'holidays', '~> 6.0'
+# Background Jobs
+gem 'delayed_job_active_record'
+
+# Frontend
+gem 'sass-rails', '~> 5.0.6'
+gem 'arel', '~> 8.0.0'
+gem 'uglifier', '>= 2.7.0'
+gem 'jquery-rails', '~> 4.2.1'
+gem 'bootstrap-datepicker-rails', '~> 1.5.0'
+gem 'font-awesome-sass', '~> 4.6.2'
+gem 'fontcustom', git: 'git://github.com/wundertax/fontcustom.git', branch: 'master'
+
+# a gem to check the browser and devices
+gem 'browser'
+
+# React
+gem 'react-rails'
+
+# CSS Reset
+gem 'rails-assets-cleanslate', source: 'https://rails-assets.org'
+
+# CSS Grid
+gem 'neat', '~> 1.8'
+
+# CSS Styleguide
+gem 'livingstyleguide'
+gem 'non-stupid-digest-assets'
+
+# Reset CSS
+gem 'normalize-rails'
+# React for Carousel
+gem 'rails-assets-jquery', '~> 2.2.0', source: 'https://rails-assets.org'
+gem 'rails-assets-react-slick', '0.14.2', source: 'https://rails-assets.org'
+gem 'rails-assets-moment', source: 'https://rails-assets.org'
+
+# for faq
+gem 'rails-assets-sticky-kit', source: 'https://rails-assets.org'
+
+# for same height columns
+gem 'rails-assets-matchHeight', source: 'https://rails-assets.org'
+
+# for verpflegungspauschalen-auslandssemester
+gem 'rails-assets-flag-icon-css', source: 'https://rails-assets.org'
+
+gem 'rails-assets-aos', source: 'https://rails-assets.org'
+
+# JS library
+gem 'rails-assets-underscore', source: 'https://rails-assets.org'
+gem 'rails-assets-bootstrap-daterangepicker', source: 'https://rails-assets.org'
+gem 'rails-assets-jquery.are-you-sure', source: 'https://rails-assets.org'
+gem 'rails-assets-jquery-cookie', source: 'https://rails-assets.org'
+gem 'rails-assets-Chart.js', '~> 2.1.4', source: 'https://rails-assets.org'
+gem 'jquery-ui-rails', '~> 5.0.5'
+
+# Form builder
+gem 'simple_form'
+gem 'cocoon'
+
+# DevOps
+gem 'bugsnag'
+gem 'logstash-event'
+gem 'lograge'
+gem 'newrelic_rpm', '~> 3.18.1'
+# Logentries
+gem 'le'
