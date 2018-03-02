@@ -2,8 +2,13 @@ FROM ruby:2.5
 
 # node installations command expect to run as root
 USER root
-## Using node installation from https://raw.githubusercontent.com/nodejs/docker-node/8498ff5302c19506c9edc3ce152f2bd4aa6b26b3/8/Dockerfile
 
+RUN deps="curl awscli" \
+ && apt-get update \
+ && apt-get install -y --no-install-recommends $deps \
+ && rm -rf /var/lib/apt/lists/*
+
+## Using node installation from https://raw.githubusercontent.com/nodejs/docker-node/8498ff5302c19506c9edc3ce152f2bd4aa6b26b3/8/Dockerfile
 RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
 

@@ -1,5 +1,11 @@
 FROM ruby:2.5
 
+USER root
+RUN deps="curl awscli" \
+ && apt-get update \
+ && apt-get install -y --no-install-recommends $deps \
+ && rm -rf /var/lib/apt/lists/*
+
 RUN mkdir -p /usr/src/rails
 WORKDIR /usr/src/rails
 
