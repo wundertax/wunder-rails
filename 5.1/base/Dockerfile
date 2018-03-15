@@ -7,6 +7,7 @@ LABEL name="wunder-rails" \
 RUN deps="curl awscli" \
  && apt-get update \
  && apt-get install -y --no-install-recommends $deps \
+ && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  && mkdir -p /usr/src/rails
 
