@@ -1,6 +1,9 @@
 FROM ruby:2.5
 
-USER root
+LABEL name="wunder-rails" \
+    description="wundertax ruby base image" \
+    maintainer="tech-services@wundertax.de"
+
 RUN deps="curl awscli" \
  && apt-get update \
  && apt-get install -y --no-install-recommends $deps \
