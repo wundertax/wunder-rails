@@ -159,13 +159,6 @@ gem 'paper_trail'
 # Logentries
 gem 'le'
 
-# OTHERS
-
-# Blog gem
-# uncomment this line to use gem from a local folder for debug purposes:
-# gem 'wundertax-core-cms', path: '../wundertax-core-cms/'
-gem 'wundertax-core-cms', git: 'https://github.com/wundertax/wundertax-core-cms.git', tag: '2.4.9'
-
 # PDF generator
 gem 'prawn'
 
@@ -177,14 +170,6 @@ gem 'rubyzip'
 
 # Zendesk client
 gem 'zendesk_api', '~> 1.16'
-
-# Get Response
-gem 'wundertax-core-mail_marketing', git: 'https://github.com/wundertax/wundertax-core-mail_marketing.git', tag: '1.1.1'
-# gem 'wundertax-core-mail_marketing', path: '../wundertax-core-mail_marketing'
-
-# File wrappers
-# gem 'wundertax-core-file', path: '../wundertax-core-file'
-gem 'wundertax-core-file', git: 'https://github.com/wundertax/wundertax-core-file.git', tag: '0.1.14'
 
 gem 'rswag-api'
 gem 'rswag-ui'

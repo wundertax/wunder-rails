@@ -44,35 +44,6 @@ GIT
     taxger (0.3.1)
 
 GIT
-  remote: https://github.com/wundertax/wundertax-core-cms.git
-  revision: 841a455904285884bcb3f4e0a57bb62e91bbad08
-  tag: 2.4.9
-  specs:
-    wundertax-core-cms (2.4.9)
-      contentful (~> 0.9.0)
-      dotenv-rails
-      mixpanel-ruby (~> 2.2.0)
-      newrelic_rpm (>= 4.4.0.336)
-      rails (>= 5.0.2)
-
-GIT
-  remote: https://github.com/wundertax/wundertax-core-file.git
-  revision: 8c2a5087cafbd4a68213cf269c0767862a90de24
-  tag: 0.1.14
-  specs:
-    wundertax-core-file (0.1.14)
-      aws-sdk-s3 (= 1.8.1)
-
-GIT
-  remote: https://github.com/wundertax/wundertax-core-mail_marketing.git
-  revision: 646e8fde50e73544644c638291f194cc734378a1
-  tag: 1.1.1
-  specs:
-    wundertax-core-mail_marketing (1.1.1)
-      faraday
-      json
-
-GIT
   remote: https://github.com/wundertax/wundertax-de-calculator
   revision: 8c317c914d09de526fe65f3a056110a1a9e9d8f8
   tag: 2.3.7
@@ -173,21 +144,6 @@ GEM
     arbre (1.1.1)
       activesupport (>= 3.0.0)
     arel (9.0.0)
-    aws-eventstream (1.0.1)
-    aws-partitions (1.107.0)
-    aws-sdk-core (3.36.0)
-      aws-eventstream (~> 1.0)
-      aws-partitions (~> 1.0)
-      aws-sigv4 (~> 1.0)
-      jmespath (~> 1.0)
-    aws-sdk-kms (1.11.0)
-      aws-sdk-core (~> 3, >= 3.26.0)
-      aws-sigv4 (~> 1.0)
-    aws-sdk-s3 (1.8.1)
-      aws-sdk-core (~> 3)
-      aws-sdk-kms (~> 1)
-      aws-sigv4 (~> 1.0)
-    aws-sigv4 (1.0.3)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
@@ -226,9 +182,6 @@ GEM
       highline (~> 2.0.0)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.2)
-    contentful (0.9.0)
-      http (~> 0.8)
-      multi_json (~> 1)
     countries (2.1.4)
       i18n_data (~> 0.8.0)
       money (~> 6.9)
@@ -255,10 +208,6 @@ GEM
       warden (~> 1.2.3)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
-    dotenv (2.5.0)
-    dotenv-rails (2.5.0)
-      dotenv (= 2.5.0)
-      railties (>= 3.2, < 6.0)
     enumerize (2.2.2)
       activesupport (>= 3.2)
     equalizer (0.0.11)
@@ -307,22 +256,14 @@ GEM
     highline (2.0.0)
     holidays (6.6.1)
     htmlentities (4.3.4)
-    http (0.9.9)
-      addressable (~> 2.3)
-      http-cookie (~> 1.0)
-      http-form_data (~> 1.0.1)
-      http_parser.rb (~> 0.6.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    http-form_data (1.0.3)
-    http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     i18n_data (0.8.0)
     ice_nine (0.11.2)
     inflection (1.0.0)
     ipaddress (0.8.3)
-    jmespath (1.4.0)
     jquery-rails (4.3.3)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -388,7 +329,6 @@ GEM
       sass (>= 3.3)
       thor (~> 0.19)
     netrc (0.11.0)
-    newrelic_rpm (5.4.0.347)
     nio4r (2.3.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
@@ -668,12 +608,9 @@ DEPENDENCIES
   voucherify
   webpacker
   wisper (~> 2.0)
-  wundertax-core-cms!
-  wundertax-core-file!
-  wundertax-core-mail_marketing!
   wundertax-de-calculator!
   wundertax-de-jsonizer!
   zendesk_api (~> 1.16)
 
 BUNDLED WITH
-   1.16.6
+   1.17.1
