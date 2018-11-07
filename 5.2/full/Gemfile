@@ -101,17 +101,10 @@ gem 'faraday'
 
 gem 'ibanizator', git: 'https://github.com/wundertax/ibanizator'
 gem 'steuernummer'
-gem 'taxger', git: 'https://github.com/wundertax/taxger'
-
-gem 'wundertax-de-calculator', git: 'https://github.com/wundertax/wundertax-de-calculator', tag: '2.3.7'
-gem 'wundertax-de-jsonizer', git: 'https://github.com/wundertax/wundertax-de-jsonizer', tag: '1.4.9'
-# Use to test against your local changes
-# gem 'wundertax-de-calculator', path: '../wundertax-de-calculator'
 
 # PAYMENTS
 
 gem 'gocardless_pro'
-gem 'payday', git: 'https://github.com/wundertax/payday', tag: '1.1.6'
 
 # TRACKING
 

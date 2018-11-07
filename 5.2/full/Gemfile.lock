@@ -26,45 +26,6 @@ GIT
       adamantium (~> 0.2.0)
       equalizer (~> 0.0.11)
 
-GIT
-  remote: https://github.com/wundertax/payday
-  revision: 4fe7f4a734548ba3c70460b2084da60877b2624b
-  tag: 1.1.6
-  specs:
-    payday (1.1.6)
-      i18n (~> 0.7)
-      money (~> 6.13)
-      prawn (~> 1.0.0)
-      prawn-svg (~> 0.15.0.0)
-
-GIT
-  remote: https://github.com/wundertax/taxger
-  revision: 6aa6979a741c26d3237f3fafa2851897d1517a0d
-  specs:
-    taxger (0.3.1)
-
-GIT
-  remote: https://github.com/wundertax/wundertax-de-calculator
-  revision: 8c317c914d09de526fe65f3a056110a1a9e9d8f8
-  tag: 2.3.7
-  specs:
-    wundertax-de-calculator (2.3.6)
-      activesupport (~> 5.2.1)
-      i18n (>= 0.7.0)
-      nokogiri (~> 1.8, >= 1.8.2)
-      terminal-table (~> 1.8)
-
-GIT
-  remote: https://github.com/wundertax/wundertax-de-jsonizer
-  revision: c8817b6d7df9e5f106529cc97dfb73b0381f0857
-  tag: 1.4.9
-  specs:
-    wundertax-de-jsonizer (1.4.9)
-      activesupport (~> 5.2.1)
-      business_time (~> 0.9.2)
-      holidays (~> 6.4)
-      nokogiri (~> 1.8, >= 1.8.2)
-
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -345,8 +306,6 @@ GEM
     prawn (1.0.0)
       pdf-core (~> 0.2.2)
       ttfunk (~> 1.1.1)
-    prawn-svg (0.15.0.0)
-      prawn (>= 0.8.4)
     premailer (1.11.1)
       addressable
       css_parser (>= 1.6.0)
@@ -567,7 +526,6 @@ DEPENDENCIES
   non-stupid-digest-assets
   normalize-rails
   paper_trail
-  payday!
   pg (~> 1.1.3)
   prawn
   premailer-rails
@@ -601,15 +559,12 @@ DEPENDENCIES
   sitemap_generator
   staccato (~> 0.5.1)
   steuernummer
-  taxger!
   terminal-table
   uglifier (>= 2.7.0)
   virtus
   voucherify
   webpacker
   wisper (~> 2.0)
-  wundertax-de-calculator!
-  wundertax-de-jsonizer!
   zendesk_api (~> 1.16)
 
 BUNDLED WITH
