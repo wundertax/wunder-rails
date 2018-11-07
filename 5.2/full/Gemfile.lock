@@ -1,0 +1,679 @@
+GIT
+  remote: https://github.com/activeadmin/inherited_resources
+  revision: bf4a5bac90ea0bfb00b236ea9cb625fc9c19e250
+  specs:
+    inherited_resources (1.9.0)
+      actionpack (>= 5.0, < 5.3)
+      has_scope (~> 0.6)
+      railties (>= 5.0, < 5.3)
+      responders
+
+GIT
+  remote: https://github.com/wundertax/fontcustom.git
+  revision: f3cb95f3b134304c01e06dc07dfd821adea95cc1
+  branch: master
+  specs:
+    fontcustom (2.0.1)
+      json (~> 1.4)
+      listen (>= 1.0, < 4.0)
+      thor (~> 0.14)
+
+GIT
+  remote: https://github.com/wundertax/ibanizator
+  revision: a270c5b11868cbc6737c248fe34a190c7eb2a5d2
+  specs:
+    ibanizator (0.3.4)
+      adamantium (~> 0.2.0)
+      equalizer (~> 0.0.11)
+
+GIT
+  remote: https://github.com/wundertax/payday
+  revision: 4fe7f4a734548ba3c70460b2084da60877b2624b
+  tag: 1.1.6
+  specs:
+    payday (1.1.6)
+      i18n (~> 0.7)
+      money (~> 6.13)
+      prawn (~> 1.0.0)
+      prawn-svg (~> 0.15.0.0)
+
+GIT
+  remote: https://github.com/wundertax/taxger
+  revision: 6aa6979a741c26d3237f3fafa2851897d1517a0d
+  specs:
+    taxger (0.3.1)
+
+GIT
+  remote: https://github.com/wundertax/wundertax-core-cms.git
+  revision: 841a455904285884bcb3f4e0a57bb62e91bbad08
+  tag: 2.4.9
+  specs:
+    wundertax-core-cms (2.4.9)
+      contentful (~> 0.9.0)
+      dotenv-rails
+      mixpanel-ruby (~> 2.2.0)
+      newrelic_rpm (>= 4.4.0.336)
+      rails (>= 5.0.2)
+
+GIT
+  remote: https://github.com/wundertax/wundertax-core-file.git
+  revision: 8c2a5087cafbd4a68213cf269c0767862a90de24
+  tag: 0.1.14
+  specs:
+    wundertax-core-file (0.1.14)
+      aws-sdk-s3 (= 1.8.1)
+
+GIT
+  remote: https://github.com/wundertax/wundertax-core-mail_marketing.git
+  revision: 646e8fde50e73544644c638291f194cc734378a1
+  tag: 1.1.1
+  specs:
+    wundertax-core-mail_marketing (1.1.1)
+      faraday
+      json
+
+GIT
+  remote: https://github.com/wundertax/wundertax-de-calculator
+  revision: 8c317c914d09de526fe65f3a056110a1a9e9d8f8
+  tag: 2.3.7
+  specs:
+    wundertax-de-calculator (2.3.6)
+      activesupport (~> 5.2.1)
+      i18n (>= 0.7.0)
+      nokogiri (~> 1.8, >= 1.8.2)
+      terminal-table (~> 1.8)
+
+GIT
+  remote: https://github.com/wundertax/wundertax-de-jsonizer
+  revision: c8817b6d7df9e5f106529cc97dfb73b0381f0857
+  tag: 1.4.9
+  specs:
+    wundertax-de-jsonizer (1.4.9)
+      activesupport (~> 5.2.1)
+      business_time (~> 0.9.2)
+      holidays (~> 6.4)
+      nokogiri (~> 1.8, >= 1.8.2)
+
+GEM
+  remote: https://rubygems.org/
+  remote: https://rails-assets.org/
+  specs:
+    aasm (5.0.1)
+      concurrent-ruby (~> 1.0)
+    ablab (0.4.2)
+      rails
+      redis
+    actioncable (5.2.1)
+      actionpack (= 5.2.1)
+      nio4r (~> 2.0)
+      websocket-driver (>= 0.6.1)
+    actionmailer (5.2.1)
+      actionpack (= 5.2.1)
+      actionview (= 5.2.1)
+      activejob (= 5.2.1)
+      mail (~> 2.5, >= 2.5.4)
+      rails-dom-testing (~> 2.0)
+    actionpack (5.2.1)
+      actionview (= 5.2.1)
+      activesupport (= 5.2.1)
+      rack (~> 2.0)
+      rack-test (>= 0.6.3)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionview (5.2.1)
+      activesupport (= 5.2.1)
+      builder (~> 3.1)
+      erubi (~> 1.4)
+      rails-dom-testing (~> 2.0)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_model_serializers (0.10.8)
+      actionpack (>= 4.1, < 6)
+      activemodel (>= 4.1, < 6)
+      case_transform (>= 0.2)
+      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
+    activeadmin (1.3.1)
+      arbre (>= 1.1.1)
+      coffee-rails
+      formtastic (~> 3.1)
+      formtastic_i18n
+      inherited_resources (>= 1.9.0)
+      jquery-rails (>= 4.2.0)
+      kaminari (>= 0.15)
+      railties (>= 4.2, < 5.3)
+      ransack (>= 1.8.7)
+      sass (~> 3.1)
+      sprockets (< 4.1)
+    activejob (5.2.1)
+      activesupport (= 5.2.1)
+      globalid (>= 0.3.6)
+    activemodel (5.2.1)
+      activesupport (= 5.2.1)
+    activerecord (5.2.1)
+      activemodel (= 5.2.1)
+      activesupport (= 5.2.1)
+      arel (>= 9.0)
+    activerecord-import (0.27.0)
+      activerecord (>= 3.2)
+    activestorage (5.2.1)
+      actionpack (= 5.2.1)
+      activerecord (= 5.2.1)
+      marcel (~> 0.3.1)
+    activesupport (5.2.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    adamantium (0.2.0)
+      ice_nine (~> 0.11.0)
+      memoizable (~> 0.4.0)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    analytics-ruby (2.2.5)
+      commander (~> 4.4)
+    arbre (1.1.1)
+      activesupport (>= 3.0.0)
+    arel (9.0.0)
+    aws-eventstream (1.0.1)
+    aws-partitions (1.107.0)
+    aws-sdk-core (3.36.0)
+      aws-eventstream (~> 1.0)
+      aws-partitions (~> 1.0)
+      aws-sigv4 (~> 1.0)
+      jmespath (~> 1.0)
+    aws-sdk-kms (1.11.0)
+      aws-sdk-core (~> 3, >= 3.26.0)
+      aws-sigv4 (~> 1.0)
+    aws-sdk-s3 (1.8.1)
+      aws-sdk-core (~> 3)
+      aws-sdk-kms (~> 1)
+      aws-sigv4 (~> 1.0)
+    aws-sigv4 (1.0.3)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
+    bcrypt (3.1.12)
+    browser (2.5.3)
+    bugsnag (6.8.0)
+      concurrent-ruby (~> 1.0)
+    builder (3.2.3)
+    business_time (0.9.3)
+      activesupport (>= 3.2.0)
+      tzinfo
+    canonical-rails (0.2.4)
+      rails (>= 4.1, < 5.3)
+    carrierwave (1.2.3)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
+    case_transform (0.2)
+      activesupport
+    cocoon (1.2.12)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    coffee-rails (4.2.2)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
+    commander (4.4.7)
+      highline (~> 2.0.0)
+    concurrent-ruby (1.0.5)
+    connection_pool (2.2.2)
+    contentful (0.9.0)
+      http (~> 0.8)
+      multi_json (~> 1)
+    countries (2.1.4)
+      i18n_data (~> 0.8.0)
+      money (~> 6.9)
+      sixarm_ruby_unaccent (~> 1.1)
+      unicode_utils (~> 1.4)
+    crass (1.0.4)
+    css_parser (1.6.0)
+      addressable
+    ddtrace (0.17.0)
+      msgpack
+      opentracing (>= 0.4.1)
+    delayed_job (4.1.5)
+      activesupport (>= 3.0, < 5.3)
+    delayed_job_active_record (4.1.3)
+      activerecord (>= 3.0, < 5.3)
+      delayed_job (>= 3.0, < 5)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    devise (4.5.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 6.0)
+      responders
+      warden (~> 1.2.3)
+    domain_name (0.5.20180417)
+      unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.5.0)
+    dotenv-rails (2.5.0)
+      dotenv (= 2.5.0)
+      railties (>= 3.2, < 6.0)
+    enumerize (2.2.2)
+      activesupport (>= 3.2)
+    equalizer (0.0.11)
+    erubi (1.7.1)
+    excon (0.62.0)
+    execjs (2.7.0)
+    faraday (0.15.3)
+      multipart-post (>= 1.2, < 3)
+    fast_jsonapi (1.5)
+      activesupport (>= 4.2)
+    ffi (1.9.25)
+    fog-aws (3.3.0)
+      fog-core (~> 2.1)
+      fog-json (~> 1.1)
+      fog-xml (~> 0.1)
+      ipaddress (~> 0.8)
+    fog-core (2.1.2)
+      builder
+      excon (~> 0.58)
+      formatador (~> 0.2)
+      mime-types
+    fog-json (1.2.0)
+      fog-core
+      multi_json (~> 1.10)
+    fog-xml (0.1.3)
+      fog-core
+      nokogiri (>= 1.5.11, < 2.0.0)
+    formatador (0.2.5)
+    formtastic (3.1.5)
+      actionpack (>= 3.2.13)
+    formtastic_i18n (0.6.0)
+    globalid (0.4.1)
+      activesupport (>= 4.2.0)
+    gocardless_pro (2.12.0)
+      faraday (>= 0.9.2, < 1.0)
+    griddler (1.5.2)
+      htmlentities
+      rails (>= 3.2.0)
+    griddler-sendgrid (1.1.0)
+      griddler (>= 1.5.2)
+      mail (>= 2.7.0)
+    has_scope (0.7.2)
+      actionpack (>= 4.1)
+      activesupport (>= 4.1)
+    hashie (3.6.0)
+    highline (2.0.0)
+    holidays (6.6.1)
+    htmlentities (4.3.4)
+    http (0.9.9)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 1.0.1)
+      http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (1.0.3)
+    http_parser.rb (0.6.0)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
+    i18n_data (0.8.0)
+    ice_nine (0.11.2)
+    inflection (1.0.0)
+    ipaddress (0.8.3)
+    jmespath (1.4.0)
+    jquery-rails (4.3.3)
+      rails-dom-testing (>= 1, < 3)
+      railties (>= 4.2.0)
+      thor (>= 0.14, < 2.0)
+    jquery-ui-rails (6.0.1)
+      railties (>= 3.2.16)
+    json (1.8.6)
+    jsonapi-renderer (0.2.0)
+    kaminari (1.1.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.1.1)
+      kaminari-activerecord (= 1.1.1)
+      kaminari-core (= 1.1.1)
+    kaminari-actionview (1.1.1)
+      actionview
+      kaminari-core (= 1.1.1)
+    kaminari-activerecord (1.1.1)
+      activerecord
+      kaminari-core (= 1.1.1)
+    kaminari-core (1.1.1)
+    le (2.7.6)
+    listen (3.1.5)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
+    livingstyleguide (2.0.3)
+      minisyntax (>= 0.2.5)
+      redcarpet
+      sass
+      thor
+      tilt
+    lograge (0.10.0)
+      actionpack (>= 4)
+      activesupport (>= 4)
+      railties (>= 4)
+      request_store (~> 1.0)
+    logstash-event (1.2.02)
+    loofah (2.2.3)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.5.9)
+    mail (2.7.1)
+      mini_mime (>= 0.1.1)
+    marcel (0.3.3)
+      mimemagic (~> 0.3.2)
+    memoizable (0.4.2)
+      thread_safe (~> 0.3, >= 0.3.1)
+    method_source (0.9.1)
+    mime-types (3.2.2)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2018.0812)
+    mimemagic (0.3.2)
+    mini_mime (1.0.1)
+    mini_portile2 (2.3.0)
+    minisyntax (0.2.5)
+    minitest (5.11.3)
+    mixpanel-ruby (2.2.0)
+    money (6.13.1)
+      i18n (>= 0.6.4, <= 2)
+    msgpack (1.2.4)
+    multi_json (1.13.1)
+    multipart-post (2.0.0)
+    neat (1.9.1)
+      sass (>= 3.3)
+      thor (~> 0.19)
+    netrc (0.11.0)
+    newrelic_rpm (5.4.0.347)
+    nio4r (2.3.1)
+    nokogiri (1.8.5)
+      mini_portile2 (~> 2.3.0)
+    non-stupid-digest-assets (1.0.9)
+      sprockets (>= 2.0)
+    normalize-rails (4.1.1)
+    opentracing (0.4.3)
+    orm_adapter (0.5.0)
+    paper_trail (10.0.1)
+      activerecord (>= 4.2, < 5.3)
+      request_store (~> 1.1)
+    pdf-core (0.2.5)
+    pg (1.1.3)
+    prawn (1.0.0)
+      pdf-core (~> 0.2.2)
+      ttfunk (~> 1.1.1)
+    prawn-svg (0.15.0.0)
+      prawn (>= 0.8.4)
+    premailer (1.11.1)
+      addressable
+      css_parser (>= 1.6.0)
+      htmlentities (>= 4.0.0)
+    premailer-rails (1.10.2)
+      actionmailer (>= 3, < 6)
+      premailer (~> 1.7, >= 1.7.9)
+    public_suffix (3.0.3)
+    puma (3.12.0)
+    rack (2.0.5)
+    rack-cors (1.0.2)
+    rack-proxy (0.6.5)
+      rack
+    rack-reverse-proxy (0.12.0)
+      rack (>= 1.0.0)
+      rack-proxy (~> 0.6, >= 0.6.1)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rails (5.2.1)
+      actioncable (= 5.2.1)
+      actionmailer (= 5.2.1)
+      actionpack (= 5.2.1)
+      actionview (= 5.2.1)
+      activejob (= 5.2.1)
+      activemodel (= 5.2.1)
+      activerecord (= 5.2.1)
+      activestorage (= 5.2.1)
+      activesupport (= 5.2.1)
+      bundler (>= 1.3.0)
+      railties (= 5.2.1)
+      sprockets-rails (>= 2.0.0)
+    rails-assets-Chart.js (2.1.6)
+    rails-assets-aos (2.3.4)
+    rails-assets-bootstrap-daterangepicker (3.0.3)
+      rails-assets-jquery (>= 1.9.1, < 4)
+      rails-assets-moment (>= 2.9.0)
+    rails-assets-cleanslate (0.10.1)
+    rails-assets-jquery (2.2.4)
+    rails-assets-jquery-cookie (1.4.1)
+      rails-assets-jquery (>= 1.2)
+    rails-assets-jquery.are-you-sure (1.9.0)
+      rails-assets-jquery (>= 1.4.2)
+    rails-assets-matchHeight (0.7.2)
+    rails-assets-moment (2.22.2)
+    rails-assets-react-slick (0.14.2)
+      rails-assets-slick-carousel (~> 1.6.0)
+    rails-assets-slick-carousel (1.6.0)
+      rails-assets-jquery (>= 1.7)
+    rails-assets-sticky-kit (1.1.2)
+    rails-assets-underscore (1.9.1)
+    rails-dom-testing (2.0.3)
+      activesupport (>= 4.2.0)
+      nokogiri (>= 1.6)
+    rails-html-sanitizer (1.0.4)
+      loofah (~> 2.2, >= 2.2.2)
+    railties (5.2.1)
+      actionpack (= 5.2.1)
+      activesupport (= 5.2.1)
+      method_source
+      rake (>= 0.8.7)
+      thor (>= 0.19.0, < 2.0)
+    rake (12.3.1)
+    ransack (2.1.0)
+      actionpack (>= 5.0)
+      activerecord (>= 5.0)
+      activesupport (>= 5.0)
+      i18n
+    rb-fsevent (0.10.3)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
+    react-rails (2.4.7)
+      babel-transpiler (>= 0.7.0)
+      connection_pool
+      execjs
+      railties (>= 3.2)
+      tilt
+    redcarpet (3.4.0)
+    redis (4.0.3)
+    redis-actionpack (5.0.2)
+      actionpack (>= 4.0, < 6)
+      redis-rack (>= 1, < 3)
+      redis-store (>= 1.1.0, < 2)
+    redis-activesupport (5.0.7)
+      activesupport (>= 3, < 6)
+      redis-store (>= 1.3, < 2)
+    redis-rack (2.0.4)
+      rack (>= 1.5, < 3)
+      redis-store (>= 1.2, < 2)
+    redis-rails (5.0.2)
+      redis-actionpack (>= 5.0, < 6)
+      redis-activesupport (>= 5.0, < 6)
+      redis-store (>= 1.2, < 2)
+    redis-store (1.6.0)
+      redis (>= 2.2, < 5)
+    request_store (1.4.1)
+      rack (>= 1.4)
+    responders (2.4.0)
+      actionpack (>= 4.2.0, < 5.3)
+      railties (>= 4.2.0, < 5.3)
+    rest-client (2.0.2)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    rswag-api (2.0.5)
+      railties (>= 3.1, < 6.0)
+    rswag-ui (2.0.5)
+      actionpack (>= 3.1, < 6.0)
+      railties (>= 3.1, < 6.0)
+    ruby_dep (1.5.0)
+    rubyzip (1.2.2)
+    sass (3.6.0)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+    sass-rails (5.0.7)
+      railties (>= 4.0.0, < 6)
+      sass (~> 3.1)
+      sprockets (>= 2.8, < 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
+      tilt (>= 1.1, < 3)
+    simple_form (4.0.1)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
+    sitemap_generator (6.0.1)
+      builder (~> 3.0)
+    sixarm_ruby_unaccent (1.2.0)
+    sprockets (3.7.2)
+      concurrent-ruby (~> 1.0)
+      rack (> 1, < 3)
+    sprockets-rails (3.2.1)
+      actionpack (>= 4.0)
+      activesupport (>= 4.0)
+      sprockets (>= 3.0.0)
+    staccato (0.5.1)
+    steuernummer (1.1.3)
+    terminal-table (1.8.0)
+      unicode-display_width (~> 1.1, >= 1.1.1)
+    thor (0.20.0)
+    thread_safe (0.3.6)
+    tilt (2.0.8)
+    ttfunk (1.1.1)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    uglifier (4.1.19)
+      execjs (>= 0.3.0, < 3)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.5)
+    unicode-display_width (1.4.0)
+    unicode_utils (1.4.0)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
+    voucherify (1.6.1)
+      rest-client (~> 2.0)
+    warden (1.2.7)
+      rack (>= 1.0)
+    webpacker (3.5.5)
+      activesupport (>= 4.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 4.2)
+    websocket-driver (0.7.0)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.3)
+    wisper (2.0.0)
+    zendesk_api (1.16.0)
+      faraday (~> 0.9)
+      hashie (>= 3.5.2, < 4.0.0)
+      inflection
+      mime-types
+      multipart-post (~> 2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  aasm
+  ablab (~> 0.4.2)
+  active_model_serializers
+  activeadmin (~> 1.3.1)
+  activerecord-import
+  analytics-ruby (~> 2.2.5)
+  arel (~> 9.0.0)
+  bcrypt (~> 3.1.12)
+  browser
+  bugsnag
+  business_time (~> 0.9.3)
+  canonical-rails
+  carrierwave (~> 1.0)
+  cocoon
+  countries (~> 2.1.4)
+  ddtrace
+  delayed_job_active_record
+  devise
+  enumerize (~> 2.2, >= 2.2.2)
+  faraday
+  fast_jsonapi
+  fog-aws
+  fontcustom!
+  gocardless_pro
+  griddler (~> 1.5.2)
+  griddler-sendgrid (~> 1.1.0)
+  holidays (~> 6.6.1)
+  ibanizator!
+  inherited_resources!
+  jquery-rails
+  jquery-ui-rails (~> 6.0.1)
+  le
+  livingstyleguide
+  lograge
+  logstash-event
+  loofah (>= 2.2.3)
+  mixpanel-ruby (~> 2.2.0)
+  neat (~> 1.8)
+  non-stupid-digest-assets
+  normalize-rails
+  paper_trail
+  payday!
+  pg (~> 1.1.3)
+  prawn
+  premailer-rails
+  puma
+  rack (~> 2.0.5)
+  rack-cors
+  rack-reverse-proxy
+  rails (= 5.2.1)
+  rails-assets-Chart.js (~> 2.1.4)!
+  rails-assets-aos!
+  rails-assets-bootstrap-daterangepicker!
+  rails-assets-cleanslate!
+  rails-assets-jquery (~> 2.2.0)!
+  rails-assets-jquery-cookie!
+  rails-assets-jquery.are-you-sure!
+  rails-assets-matchHeight!
+  rails-assets-moment!
+  rails-assets-react-slick (= 0.14.2)!
+  rails-assets-sticky-kit!
+  rails-assets-underscore!
+  rails-html-sanitizer (~> 1.0, >= 1.0.4)
+  react-rails
+  redcarpet
+  redis (~> 4.0.2)
+  redis-rails (~> 5.0, >= 5.0.2)
+  rswag-api
+  rswag-ui
+  rubyzip
+  sass-rails (~> 5.0.7)
+  simple_form
+  sitemap_generator
+  staccato (~> 0.5.1)
+  steuernummer
+  taxger!
+  terminal-table
+  uglifier (>= 2.7.0)
+  virtus
+  voucherify
+  webpacker
+  wisper (~> 2.0)
+  wundertax-core-cms!
+  wundertax-core-file!
+  wundertax-core-mail_marketing!
+  wundertax-de-calculator!
+  wundertax-de-jsonizer!
+  zendesk_api (~> 1.16)
+
+BUNDLED WITH
+   1.16.6
