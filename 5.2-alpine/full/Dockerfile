@@ -50,8 +50,7 @@ RUN apk add --no-cache curl
 #   done
 
 # node
-ENV VERSION=v11.1.0 NPM_VERSION=6 YARN_VERSION=latest
-ENV NODE_VERSION 8.9.4
+ENV NODE_VERSION=v11.1.0 NPM_VERSION=6 YARN_VERSION=latest
 ENV CONFIG_FLAGS="--fully-static --without-npm" DEL_PKGS="libstdc++" RM_DIRS=/usr/include
 RUN apk add --no-cache curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ && \
   for server in ipv4.pool.sks-keyservers.net keyserver.pgp.com ha.pool.sks-keyservers.net; do \
@@ -65,11 +64,11 @@ RUN apk add --no-cache curl make gcc g++ python linux-headers binutils-gold gnup
       C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8 \
       DD8F2338BAE7501E3DD5AC78C273792F7D83545D && break; \
   done && \
-  curl -sfSLO https://nodejs.org/dist/${VERSION}/node-${VERSION}.tar.xz && \
-  curl -sfSL https://nodejs.org/dist/${VERSION}/SHASUMS256.txt.asc | gpg --batch --decrypt | \
-    grep " node-${VERSION}.tar.xz\$" | sha256sum -c | grep ': OK$' && \
-  tar -xf node-${VERSION}.tar.xz && \
-  cd node-${VERSION} && \
+  curl -sfSLO https://nodejs.org/dist/${NODE_VERSION}/node-${NODE_VERSION}.tar.xz && \
+  curl -sfSL https://nodejs.org/dist/${NODE_VERSION}/SHASUMS256.txt.asc | gpg --batch --decrypt | \
+    grep " node-${NODE_VERSION}.tar.xz\$" | sha256sum -c | grep ': OK$' && \
+  tar -xf node-${NODE_VERSION}.tar.xz && \
+  cd node-${NODE_VERSION} && \
   ./configure --prefix=/usr ${CONFIG_FLAGS} && \
   make -j$(getconf _NPROCESSORS_ONLN) && \
   make install && \
@@ -94,7 +93,7 @@ RUN apk add --no-cache curl make gcc g++ python linux-headers binutils-gold gnup
     fi; \
   fi && \
   apk del curl make gcc g++ python linux-headers binutils-gold gnupg ${DEL_PKGS} && \
-  rm -rf ${RM_DIRS} /node-${VERSION}* /usr/share/man /tmp/* /var/cache/apk/* \
+  rm -rf ${RM_DIRS} /node-${NODE_VERSION}* /usr/share/man /tmp/* /var/cache/apk/* \
     /root/.npm /root/.node-gyp /root/.gnupg /usr/lib/node_modules/npm/man \
     /usr/lib/node_modules/npm/doc /usr/lib/node_modules/npm/html /usr/lib/node_modules/npm/scripts
 
