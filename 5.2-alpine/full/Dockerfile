@@ -112,10 +112,6 @@ COPY Gemfile.lock /usr/src/rails/
 # nokogiri
 
 RUN apk add --update \
-  zlib \
-  zlib-dev \
-  libressl \
-  libressl-dev \
   build-base \
   libxml2-dev \
   libxslt-dev \
@@ -130,5 +126,7 @@ RUN bundle config --global frozen 1
 RUN bundle install
 
 RUN mkdir -p /usr/src/app
+
+RUN apk add --no-cache tzdata xz-libs libc6-compat
 
 EXPOSE 3000
