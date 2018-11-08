@@ -112,6 +112,10 @@ COPY Gemfile.lock /usr/src/rails/
 # nokogiri
 
 RUN apk add --update \
+  zlib \
+  zlib-dev \
+  libressl \
+  libressl-dev \
   build-base \
   libxml2-dev \
   libxslt-dev \
