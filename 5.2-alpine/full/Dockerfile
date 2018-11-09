@@ -18,36 +18,9 @@ RUN apk -v --update add \
     pip install --upgrade pip awscli==1.14.5 s3cmd==2.0.1 python-magic && \
     apk -v --purge del py-pip && \
     rm /var/cache/apk/*
+# end aws-cli
 
-# RUN deps="curl awscli" \
-#  && apt-get update \
-#  && apt-get install -y --no-install-recommends $deps \
-#  && rm -rf /var/lib/apt/lists/*
-
-# curl 
 RUN apk add --no-cache curl
-
-
-## Using node installation from https://raw.githubusercontent.com/nodejs/docker-node/8498ff5302c19506c9edc3ce152f2bd4aa6b26b3/8/Dockerfile
-# RUN groupadd --gid 1000 node \
-#   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
-
-# # gpg keys listed at https://github.com/nodejs/node#release-team
-# RUN set -ex \
-#   && for key in \
-#     94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \
-#     FD3A5288F042B6850C66B31F09FE44734EB7990E \
-#     71DCFD284A79C3B38668286BC97EC7A07EDE3FC1 \
-#     DD8F2338BAE7501E3DD5AC78C273792F7D83545D \
-#     C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8 \
-#     B9AE9905FFD7803F25714661B63B535A4C206CA9 \
-#     56730D5401028683275BD23C23EFEFE93C4CFFFE \
-#     77984A986EBC2AA786BC0F66B01FBB92821C587A \
-#   ; do \
-#     gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys "$key" || \
-#     gpg --keyserver hkp://ipv4.pool.sks-keyservers.net --recv-keys "$key" || \
-#     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ; \
-#   done
 
 # node
 ENV NODE_VERSION=v11.1.0 NPM_VERSION=6 YARN_VERSION=latest
@@ -109,7 +82,6 @@ COPY Gemfile /usr/src/rails/
 COPY Gemfile.lock /usr/src/rails/
 
 # nokogiri
-
 RUN apk add --update \
   build-base \
   libxml2-dev \
