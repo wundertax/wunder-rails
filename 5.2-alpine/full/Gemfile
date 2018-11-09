@@ -1,0 +1,168 @@
+source 'https://rubygems.org'
+
+gem 'rails', '5.2.1'
+gem 'rack', '~> 2.0.5'
+gem 'bcrypt', '~> 3.1.12'
+gem 'pg', '~> 1.1.3'
+gem 'countries', '~> 2.1.4'
+gem 'redis', '~> 4.0.2'
+gem 'redis-rails', '~> 5.0', '>= 5.0.2'
+gem 'business_time', '~> 0.9.3'
+gem 'holidays', '~> 6.6.1'
+gem 'activerecord-import'
+gem 'delayed_job_active_record'
+gem 'puma'
+gem 'rails-html-sanitizer', '>= 1.0.4', '~> 1.0'
+gem 'loofah', '>= 2.2.3'
+
+# Publish-Subscribe model
+gem 'wisper', '~> 2.0'
+
+# Extended classes with defined attributes
+gem 'virtus'
+
+# State management
+gem 'aasm'
+
+# Debugging
+gem 'terminal-table'
+
+# Enums with strings (by default Rails handles only integer enums)
+gem 'enumerize', '~> 2.2', '>= 2.2.2'
+
+# Faster JSON serializer
+gem 'fast_jsonapi'
+gem 'active_model_serializers'
+
+# Cross Origin Requests
+gem 'rack-cors', require: 'rack/cors'
+
+# FRONT END
+
+gem 'sass-rails', '~> 5.0.7'
+gem 'arel', '~> 9.0.0'
+gem 'uglifier', '>= 2.7.0'
+gem 'jquery-rails'
+gem 'fontcustom', git: 'https://github.com/wundertax/fontcustom.git', branch: 'master'
+gem 'rails-assets-Chart.js', '~> 2.1.4', source: 'https://rails-assets.org'
+
+# React
+gem 'react-rails'
+
+# CSS Reset
+gem 'rails-assets-cleanslate', source: 'https://rails-assets.org'
+
+# CSS Grid
+gem 'neat', '~> 1.8'
+
+# CSS Styleguide
+gem 'livingstyleguide'
+gem 'non-stupid-digest-assets'
+
+# Reset CSS
+gem 'normalize-rails'
+
+# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
+gem 'webpacker'
+
+# React for Carousel
+gem 'rails-assets-jquery', '~> 2.2.0', source: 'https://rails-assets.org'
+gem 'rails-assets-react-slick', '0.14.2', source: 'https://rails-assets.org'
+gem 'rails-assets-moment', source: 'https://rails-assets.org'
+
+# For FAQ
+gem 'rails-assets-sticky-kit', source: 'https://rails-assets.org'
+
+# For same height columns
+gem 'rails-assets-matchHeight', source: 'https://rails-assets.org'
+
+gem 'rails-assets-aos', source: 'https://rails-assets.org'
+
+# Checks browser and device
+gem 'browser'
+
+# JS library
+gem 'rails-assets-underscore', source: 'https://rails-assets.org'
+gem 'rails-assets-bootstrap-daterangepicker', source: 'https://rails-assets.org'
+gem 'rails-assets-jquery.are-you-sure', source: 'https://rails-assets.org'
+gem 'rails-assets-jquery-cookie', source: 'https://rails-assets.org'
+gem 'jquery-ui-rails', '~> 6.0.1'
+
+# Form builder
+gem 'simple_form'
+gem 'cocoon'
+
+gem 'ablab', '~> 0.4.2'
+gem 'redcarpet'
+
+gem 'faraday'
+
+# DECLARATIONS
+
+gem 'ibanizator', git: 'https://github.com/wundertax/ibanizator'
+gem 'steuernummer'
+
+# PAYMENTS
+
+gem 'gocardless_pro'
+
+# TRACKING
+
+gem 'analytics-ruby', '~> 2.2.5', require: 'segment/analytics'
+
+# Ruby library to track into the official Google Analytics Measurement Protocol
+gem 'staccato', '~> 0.5.1'
+
+gem 'mixpanel-ruby', '~> 2.2.0'
+
+# SEO
+
+gem 'sitemap_generator'
+gem 'canonical-rails'
+gem 'rack-reverse-proxy', require: 'rack/reverse_proxy'
+
+# ADMIN
+
+gem 'activeadmin', '~> 1.3.1'
+gem 'devise'
+gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
+gem 'carrierwave', '~> 1.0'
+gem "fog-aws"
+
+# EMAILS
+
+gem 'premailer-rails'
+
+# Parsing Sendgrid emails
+gem 'griddler', '~> 1.5.2'
+gem 'griddler-sendgrid', '~> 1.1.0'
+
+# EVENTS / LOGGING
+
+gem 'logstash-event'
+gem 'lograge'
+gem 'bugsnag'
+
+# Datadog
+gem 'ddtrace'
+
+# Logging database changes
+gem 'paper_trail'
+
+# Logentries
+gem 'le'
+
+# PDF generator
+gem 'prawn'
+
+# Voucherify
+gem 'voucherify'
+
+# ZIP generator for GDPR requests
+gem 'rubyzip'
+
+# Zendesk client
+gem 'zendesk_api', '~> 1.16'
+
+gem 'rswag-api'
+gem 'rswag-ui'
