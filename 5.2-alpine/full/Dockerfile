@@ -100,4 +100,10 @@ RUN mkdir -p /usr/src/app
 
 RUN apk add --no-cache tzdata xz-libs libc6-compat
 
+RUN apk add --no-cache openssl
+
+# patch to make it work with puma
+RUN ln -s /lib/libcrypto.so.1.0.0 /lib/libcrypto.so.1.1
+RUN ln -s /lib/libssl.so.1.0.0 /lib/libssl.so.1.1
+
 EXPOSE 3000
