@@ -1,0 +1,20 @@
+
+source 'https://rubygems.org'
+
+gem 'rails', '5.2.1'
+gem 'puma', '~> 3.7'
+gem 'redis', '~> 3.2'
+gem 'pg', '~> 0.18.3'
+gem 'bcrypt', '~> 3.1.7'
+
+# PubSub
+gem 'wisper', '~> 2.0'
+
+# Error / Perfomance reporting
+gem 'bugsnag'
+
+gem 'countries', '~> 1.2.2'
+
+# Logging
+gem 'logstash-event'
+gem 'lograge'
