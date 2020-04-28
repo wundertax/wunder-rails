@@ -1,4 +1,4 @@
-FROM ruby:2.5
+FROM ruby:2.5.7
 
 # node installations command expect to run as root
 USER root
