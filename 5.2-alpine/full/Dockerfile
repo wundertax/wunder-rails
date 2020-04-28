@@ -3,9 +3,7 @@ FROM ruby:2.5.3-alpine
 # node installations command expect to run as root
 USER root
 
-RUN apk add --no-cache bash git openssh
-
-RUN apk add --no-cache ruby ruby-nokogiri
+RUN apk add --no-cache bash git openssh ruby ruby-nokogiri graphicsmagick poppler-utils
 
 # aws-cli
 RUN apk -v --update add \
