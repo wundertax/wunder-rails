@@ -3,7 +3,7 @@ FROM ruby:2.5.7-alpine
 # node installations command expect to run as root
 USER root
 
-RUN apk add --no-cache bash git openssh ruby ruby-nokogiri graphicsmagick poppler-utils
+RUN apk add --no-cache bash git openssh ruby ruby-nokogiri graphicsmagick poppler-utils ghostscript
 
 # aws-cli
 RUN apk -v --update add \
@@ -99,9 +99,5 @@ RUN mkdir -p /usr/src/app
 RUN apk add --no-cache tzdata xz-libs libc6-compat
 
 RUN apk add --no-cache openssl
-
-# patch to make it work with puma
-RUN ln -s /lib/libcrypto.so.1.0.0 /lib/libcrypto.so.1.1
-RUN ln -s /lib/libssl.so.1.0.0 /lib/libssl.so.1.1
 
 EXPOSE 3000
