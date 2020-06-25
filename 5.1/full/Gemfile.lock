@@ -137,7 +137,7 @@ GEM
     pg (0.18.4)
     puma (4.3.3)
       nio4r (~> 2.0)
-    rack (2.0.6)
+    rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (5.1.7)
@@ -263,7 +263,7 @@ DEPENDENCIES
   normalize-rails
   pg (~> 0.18.3)
   puma
-  rack (~> 2.0.0)
+  rack (~> 2.2.3)
   rails (~> 5.1)
   rails-assets-Chart.js (~> 2.1.4)!
   rails-assets-aos!
