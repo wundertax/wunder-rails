@@ -75,7 +75,8 @@ GEM
     nokogiri (1.10.2)
       mini_portile2 (~> 2.4.0)
     pg (0.18.4)
-    puma (3.12.4)
+    puma (4.3.8)
+      nio4r (~> 2.0)
     rack (2.0.6)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -133,7 +134,7 @@ DEPENDENCIES
   logstash-event
   newrelic_rpm (~> 3.18.1)
   pg (~> 0.18.3)
-  puma (~> 3.12)
+  puma (~> 4.3)
   rails (~> 5.1.4)
   redis (~> 3.2)
   wisper (~> 2.0)
